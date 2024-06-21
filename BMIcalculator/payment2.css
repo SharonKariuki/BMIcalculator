@@ -1,0 +1,41 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eff0e9;
+
+}
+h1{
+    align-self: center;
+}
+
+.payment-form {
+    border: 2px solid #71f594;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #8dd481;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card-icons img {
+    margin-right: 10px;
+}
+
+.card-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.expiry {
+    display: flex;
+    justify-content: space-between;
+}

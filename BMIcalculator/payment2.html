@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment2.css">
+</head>
+<body>
+
+    <div class="payment-form">
+        <h1>Enter Your Payment Details</h1>
+        <div class="card-icons">
+            <img src="visacard.jpg" width="30" height="25" alt="Visa">
+            <img src="ms.jpg" width="30" height=" 25" alt="MasterCard">
+            
+        </div>
+        <div class="card-details">
+            <input type="text" id="card-number" placeholder="1111-2222-3333-4444">
+            <div class="expiry">
+                <input type="text" placeholder="MM">
+                <input type="text" placeholder="YYYY">
+            </div>
+            <input type="text" placeholder="Security Code">
+        </div>
+        <p class="terms-text"><a href="terms.html" target="_blank">Terms and Conditions apply</a></p>
+
+    </div>
+    <script>
+        const cardNumberInput = document.getElementById('card-number');
+        cardNumberInput.addEventListener('input', formatCardNumber);
+
+        function formatCardNumber() {
+            const value = cardNumberInput.value.replace(/\D/g, '');
+            const formattedValue = value.slice(0, 16).replace(/(\d{4})(?=\d)/g, '$1-');            
+            cardNumberInput.value = formattedValue;
+        }
+        
+    </script>
+</body>
+</html>

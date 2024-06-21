@@ -1,0 +1,76 @@
+
+
+body {
+    background-color: #171a18;
+    font-family: Arial, sans-serif;
+    background-image: url("C:/Users/pmn25/Downloads/health.jpg");
+    background-size: cover;
+}
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+
+}
+
+.plan {
+    max-width: 50%; 
+    padding: 20px;
+    border: 3px solid #71f594;
+    border-radius: 10px;
+    
+    color: #eee7e7;
+    margin-bottom: 35px;
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #71f594;
+    border-radius: 8px;
+    
+}
+.plan-container ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #97deb4;
+}
+.container ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #97deb4;
+}
+.container button:hover{
+    color: beige;
+}
+h1{
+    font-size: 3.0rem;
+    color: aquamarine;
+    align-self: center;
+    text-decoration: underline;
+    text-indent: 5cm;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #71f594;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color:aquamarine;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color:#71f594;
+    color: #141313;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.container p{
+    text-indent: 5px;
+}
